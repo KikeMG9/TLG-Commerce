@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Enrique Martín García">
+		<meta name="description" content="Pagina realizada para la prueba de nivel de TLG Commerce">
+		<meta name="keywords" content="pagina, prueba, nivel, enrique, martin, garcia, tlg, commerce">
+			
+			<title>Prueba de Nivel - TLG Commerce</title>
+		
+		<!--Libreria Jquery-->
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+		</script>
+		<script src="https://use.fontawesome.com/e6f4f534bd.js"></script>
+		<!--Desplazamiento Suave-->
+		<script>
+	    $('document').ready(function(){
+		$('a.informacion').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<script>
+	    $('document').ready(function(){
+		$('a.servicios').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<script>
+	    $('document').ready(function(){
+		$('a.trabajos').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<script>
+	    $('document').ready(function(){
+		$('a.contacto').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<script>
+	    $('document').ready(function(){
+		$('a.precios').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<script>
+	    $('document').ready(function(){
+		$('a.cabecera').click(function(e) {
+		e.preventDefault();
+		var enlace = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(enlace).offset().top
+		}, 1500);
+		});
+		});
+		</script>
+		<!--/Desplazamiento Suave-->
+		<!--/Libreria Jquery-->	
+
+		<!--Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!--/Bootstrap-->
+
+		<style>
+			header{
+				position: fixed;
+				width: 100%;
+				z-index: 100;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			p{
+				margin-bottom: 20px;
+			}
+			.titulo{
+				background-color:#020438;
+				color:#fff;
+				text-align:center;
+				margin-bottom:0px;
+			}
+			.contenido{
+				background-color:#284184;
+				color:#fff;
+			}
+			.container-fluid{
+				padding: 10px 150px;
+			}
+			.icono1{
+				font-size:100px;
+				color:#FFFFFF;
+				text-align:center;
+			}
+			.justificado{
+				text-align:justify;
+			}
+			.icono2{
+				font-size:30px;
+				color:#020438;
+				text-align:center;
+			}
+			.icono3{
+				font-size:100px;
+				color:#020438;
+				text-align:center;
+			}
+			.thumbnail img{
+				width:100%;
+				height:220px;
+			}
+			.contenido2{
+				background-color:#284184;
+				color:#000;
+			}
+			.colornegro{
+				color:#000;
+			}
+			.thumbnail{
+				border:none;
+				border-radius:0;
+				padding:0 0 15px 0;
+			}
+			.item h4{
+				font-style:italic;
+				font-size:20px;
+				line-height:30px;
+				margin:50px;
+			}
+			.autor{
+				font-style:normal;
+				font-weight:bold;
+			}
+			.carousel-control.left, .carousel-control.right{
+				background-image:none;
+				color:#020438;
+			}
+			.carousel-indicators li{
+				border-color:#284184;
+			}
+			.carousel-indicators li.active{
+				background-color:#284184;
+			}
+			.panel{
+				border:1px solid #284184;
+				border-radius:0px;
+				transition: box-shadow 0.5s;
+			}
+			.panel:hover{
+				box-shadow: 5px 0px 40px #020438;
+			}
+			.panel-heading{
+				background-color:#1F8EA3 !important;
+				background-image:none !important;
+				color:#fff !important;
+			}
+			.panel-footer{
+				background-color:#1F8EA3;
+				background-image:none !important;
+				color:#000;
+			}
+			footer{
+				background-color:#1F8EA3;
+				color:#000;
+			}
+			footer a{
+				color:#fff;
+			}
+			footer a:hover{
+				color:#000;
+			}
+			.navbar{
+				margin-bottom:0px;
+				background-image:none;
+				background-color:#020438;
+				border:0;
+				font-size:15px;
+				border-radius:0;
+				box-shadow:0px 0px 0px;
+				letter-spacing:2px;
+			}
+			.navbar li a, .navbar-brand{
+				color:#fff !important;
+			}
+			.navbar-brand{
+				font-size:40px;
+				color:#fff !important;
+			}
+			.navbar li a:hover{
+				background-color:#fff !important;
+				color:#000 !important;
+			}
+		</style>
+	</head>
+	<body id="cabecera">
+	<header>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand cabecera" href="#cabecera">Mark-End</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#cabecera" class="cabecera">Inicio</a></li>
+				<li><a href="#informacion" class="informacion">Sobre Nosotros</a></li>
+				<li><a href="#servicios" class="servicios">Servicios</a></li>
+				<li><a href="#trabajos" class="trabajos">Trabajos</a></li>
+				<li><a href="#precios" class="precios">Precios</a></li>
+				<li><a href="#contacto" class="contacto">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	</header>
+		<div class="jumbotron titulo">
+			<h1>Mark-End</h1>
+			<p>La mejor empresa de Marketing Diseño y Programación</p>
+			<form class="form-inline">
+				<div class="input-group">
+					<input type="email" class="form-control" size="50" placeholder="Introduce tu correo" required>
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-info">Suscríbete</button>
+					</div>
+				</div>
+			<div id="informacion"></div>
+			
+			</form>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 justificado">
+					<h2>¿Quiénes somos?</h2>
+						<p>Somos una empresa dedica a la programación, el diseño y el marketing online, millones de empresas han contando con nuestra colaboración y podemos decir que hemos realizado más de 150 proyectos para empresas importantes, ¡no está nada mal!
+						</p>
+						<p>
+						Tenemos personal altamente cualificado para cada una de las funciones necesarias, ya sea el diseño gráfico, la maquetación o programadores 	expertos en su materia para un resultado altamente profesional. 
+						</p>
+				</div>
+				<br>
+				<br>
+				<div class="col-sm-4 icono3">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid contenido">
+			<div class="row">
+				<div class="col-sm-4 icono1">
+					<i class="fa fa-globe" aria-hidden="true"></i>
+				</div>
+				<div class="sol-sm-8">
+					<h3>Nuestros valores</h3>
+						<h4><strong>Misión: </strong>
+							Nuestra misión es proveer el mejor servicio</h4>
+								<h5><strong>Visión: </strong>
+									Nuestra visión es ser los mejores</h5>
+				<div  id="servicios"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center">
+			<h2>Sevicios</h2>
+			<h4>Conoce todos los servicios que tenemos para ofrecerte</h4>
+			<br>
+			<div class="row servicios">
+				<div class="col-sm-4">
+					<h4><i class="fa fa-pencil icono2" aria-hidden="true"></i> Diseño Web</h4>
+					<p>Tenemos a los mejores profesionales del diseño web, ¡para que tu página se vea mejor que nunca!</p>
+				</div>
+				<div class="col-sm-4">
+					<h4><i class="fa fa-angle-double-left icono2" aria-hidden="true"></i> Programación <i class="fa fa-angle-double-right icono2" aria-hidden="true"></i></h4>
+					<p>Nos enargamos de todo el código si quieres despreocuparte por completo, o podemos ayudarte si lo prefieres.</p>
+				</div>
+				<div class="col-sm-4">
+					<h4><i class="fa fa-paint-brush icono2" aria-hidden="true"></i> Diseño Grafico</h4>
+					<p>Sea lo que sea que tienes en mente, ¡nuestros diseñadores podrán plasmarlo a la perfección!</p>
+				</div>
+			</div>
+			<div class="row servicios">
+				<div class="col-sm-4">
+					<h4><i class="fa fa-users icono2" aria-hidden="true"></i> Marketing</h4>
+					<p>Sabemos que el marketing es muy importante, pero no te preocupes que de eso nos encargamos nosotros.</p>
+				</div>
+				<div class="col-sm-4">
+					<h4><i class="fa fa-th icono2" aria-hidden="true"></i> Maquetación</h4>
+					<p>Te lo dejaremos todo recogido... ¡y perfectamente montado!</p>
+				</div>
+				<div class="col-sm-4">
+					<h4><i class="fa fa-paypal icono2" aria-hidden="true"></i> Pagos</h4>
+					<p>Aceptamos todo tipo de pagos, siempre que se pague claro.</p>
+				<div  id="trabajos"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center contenido">
+			<div class="row">
+				<h2>Trabajos realizados</h2>
+				<h4>Aquí encontrarás algunos de nuestros trabajos</h4>
+				<br>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+					<a target="_blank" href="img/proyecto2.jpg" title="Primer Proyecto Realizado" data-lightbox-hidpi="img/proyecto2/1@2x.jpg">
+						<img src="img/proyecto2.jpg" alt="Nuestro Primer Proyecto Realizado">
+					</a>
+					<br>
+						<p class="colornegro"><strong>Nuestro Primer Proyecto</strong></p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+					<a target="_blank" href="img/proyecto3.jpg" title="Segundo Proyecto Realizado" data-lightbox-hidpi="img/proyecto3/1@2x.jpg">
+						<img src="img/proyecto3.jpg" alt="Nuestro Segundo Proyecto Realizado">
+					</a>
+						<br>
+						<p class="colornegro"><strong>Nuestro Segundo Proyecto</strong></p>					
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<a target="_blank" href="img/proyecto4.jpg" title="Tercer Proyecto Realizado" data-lightbox-hidpi="img/proyecto4/1@2x.jpg">
+							<img src="img/proyecto4.jpg" alt="Nuestro Tercer Proyecto Realizado">
+						</a>
+						<br>
+						<p class="colornegro"><strong>Nuestro Tercer Proyecto</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center">
+			<h2>¿Qué dicen nuestros clientes?</h2>
+			<div id="opiniones" class="carousel slide" data ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#opiniones" data-slide-to="0" class="active"></li>
+					<li data-target="#opiniones" data-slide-to="1"></li>
+					<li data-target="#opiniones" data-slide-to="2"></li>
+				</ol>
+			<div class="carousel-inner" role="lightbox">
+				<div class="item active">
+					<h4>Me encantó el trabajo realizado en mi edificio. ¡Lo recomiendo! <br><span class="autor">Sergio Ramírez</span></h4>
+				</div>
+				<div class="item">
+					<h4>El diseño que nos hicieron de nuestra web me parece espectacular. <br><span class="autor">David Martín</span></h4>
+				</div>
+					<div class="item">
+						<h4>Gracias al marketing que nos hicieron nos hemos dado a conocer. <br><span class="autor">Sofia Pérez</span></h4>
+					</div>
+						<a class="left carousel-control" href="#opiniones" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Anterior</span></a>
+						<a class="right carousel-control" href="#opiniones" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Siguiente</span></a>
+			<div id="precios"></div>
+			<br>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="text-center">
+				<h2>Precios</h2>
+				<h4>Puedes escoger el plan que más se adapte a tu presupuesto</h4>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h1>Básico</h1>
+						</div>
+						<div class="panel-body">
+							<p>Asesoramiento</p>
+							<p>Diseño Personalizado de Logo</p>
+							<p>Ayuda con Programación</p>
+							<p>Soporte 24/7</p>
+						</div>
+						<div class="panel-footer">
+							<h3>50€</h3>
+							<button class="btn btn-lg">Contratar</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h1>Intermedio</h1>
+						</div>
+						<div class="panel-body">
+							<p>Ayuda con Programación</p>
+							<p>Diseño Personalizado</p>
+							<p>Marketing Simple</p>
+							<p>Soporte 24/7</p>
+						</div>
+						<div class="panel-footer">
+							<h3>250€</h3>
+							<button class="btn btn-lg">Contratar</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h1>Avanzado</h1>
+						</div>
+						<div class="panel-body">
+							<p>Creación de Página Web</p>
+							<p>Marketing Avanzado</p>
+							<p>Diseños Personalizados</p>
+							<p>Soporte 24/7</p>
+						</div>
+						<div class="panel-footer">
+							<h3>500€</h3>
+							<button class="btn btn-lg">Contratar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container-fluid contenido" id="contacto">
+			<div class="text-center">
+				<h2>Contacto</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-5">
+					<p>Contacta con nosotros</p>
+					<p><span class="glyphicon glyphicon-map-marker"></span> C/ Alcalá, 20. Madrid</p>
+					<p><span class="glyphicon glyphicon-phone"></span> +34-123456789</p>
+					<p><span class="glyphicon glyphicon-envelope"></span> mark-end@markend.com</p>
+				</div>
+				<div class="col-sm-7">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="nombre" placeholder="Ingrese su nombre" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" placeholder="Ingrese su correo" type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" id="comentario" placeholder="Escriba su comentario" rows="5"></textarea>
+					<br>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-default pull-right" type="submit">Enviar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		<div class="container-fluid text-center">
+			<p>Pagina realizada por: <a href="#">Enrique Martín García</a></p>
+		</div>
+	</footer>
+</body>
+</html>
